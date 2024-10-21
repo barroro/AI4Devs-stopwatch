@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch using AI</title>
+    <script defer src="script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script> <!-- Última versión de TailwindCSS -->
+</head>
+<body class="bg-white flex flex-col items-center justify-center min-h-screen">
+    <h1 class="text-3xl font-bold mb-6">Stopwatch using AI</h1>
+
+    <div class="relative">
+        <input id="timeDisplay" type="text" readonly class="text-5xl font-mono bg-white text-center rounded-lg p-4 w-full border border-gray-300 focus:outline-none" value="00:00:00">
+        <span id="milliseconds" class="absolute bottom-1 right-3 text-sm text-gray-500">000</span>
+    </div>
+
+    <div class="mt-6 flex space-x-4">
+        <button id="startBtn" class="bg-cyan-700 hover:bg-cyan-600 text-white font-bold py-3 px-8 rounded-lg text-xl">Start</button>
+        <button id="clearBtn" class="bg-red-300 hover:bg-red-400 text-white font-bold py-3 px-8 rounded-lg text-xl">Clear</button>
+    </div>
+</body>
+</html>
